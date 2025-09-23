@@ -7,7 +7,7 @@ if Ej == 1:
 
 # 1- Codifica un programa que solicite un número por teclado e que saque un mensaxe que diga “É un número positivo”, sempre que cumpra esa condición.
 
- n = int(input("Di un numero "))
+ n = (float(input("Di un numero ")))
  if n>0:
     print("Tu numero es positivo")
  else:
