@@ -1,3 +1,5 @@
+from itertools import count
+from random import triangular
 
 Ej = int(input("Escoge un ejercicio "))
 
@@ -43,3 +45,33 @@ if Ej == 4:
      nump = i%2
      if nump == 0:
          print (i)
+
+if Ej == 5:
+#Escribir un programa que reciba un número n por parámetro e imprima os primeiros n números triangulares, xunto co seu índice. Os números triangulares obteñense mediante a suma dos números naturales dende 1 ata n. É dicir, si se piden os primeros 5 números triangulares, o programa debe imprimir:
+
+ numero = int(input("Ingresa un numero: "))
+
+ def triangular(numero):
+     for i in range (1, numero + 1):
+        i = numero*(numero+1)/2
+     return i
+ print (triangular(numero))
+
+
+if Ej == 6:
+#Escribir un programa que tome unha cantidade m de valores ingresados polo usuario, a cada un lle calcule o factorial e imprima o resultado xunto co número de orden correspondiente.
+
+ cantidad = int(input("¿Cuántos valores quieres ingresar? "))
+
+ for orden in range(1, cantidad + 1):
+    numero = int(input("Introduce el valor: "))
+
+    factorial = 1
+    for i in range(1, numero + 1):
+        factorial *= i
+    print("número: ", numero, " -> factorial = ", factorial)
+
+
+if Ej == 7:
+#Escribir un programa que imprima por pantalla tódalas fichas de dominó, de unha por liña e sen repetir.
+
