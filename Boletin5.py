@@ -75,3 +75,7 @@ if Ej == 6:
 if Ej == 7:
 #Escribir un programa que imprima por pantalla tódalas fichas de dominó, de unha por liña e sen repetir.
 
+ for i in range(7):
+  for num in range(i,7):
+      print (i,"|", num,)
+
