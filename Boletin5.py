@@ -79,3 +79,12 @@ if Ej == 7:
   for num in range(i,7):
       print (i,"|", num,)
 
+
+if Ej == 8:
+#Modificar o programa anterior para que poida xerar fichas dun xogo que pode ter números de 0 a n.
+
+ n = int(input("Introduce un numero: "))
+
+ for i in range(n +1):
+    for num in range(i, n +1):
+        print(i, "|", num, )
