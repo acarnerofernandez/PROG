@@ -1,5 +1,8 @@
 from itertools import count
+from operator import index
 from random import triangular
+
+from orca.punctuation_settings import left_single_quote
 
 Ej = int(input("Escoge un ejercicio "))
 
@@ -88,3 +91,27 @@ if Ej == 8:
  for i in range(n +1):
     for num in range(i, n +1):
         print(i, "|", num, )
+
+if Ej == 9:
+#Calcula a cantidade de números negativos, positivos e ceros que hai nun grupo de 10 números enteiros.
+
+ lista = []
+ neg = 0
+ pos = 0
+ cero = 0
+
+ for i in range(0,10):
+     n = int(input("Introduce un numero: "))
+     lista.append(n)
+
+ for n in lista:
+  if n > 0:
+   neg = neg + 1
+  elif n < 0:
+   pos = pos + 1
+  else:
+   cero = cero + 1
+
+ print("Positivos:", pos)
+ print("Negativos:", neg)
+ print("Ceros:", cero)
