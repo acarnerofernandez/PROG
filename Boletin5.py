@@ -115,3 +115,16 @@ if Ej == 9:
  print("Positivos:", pos)
  print("Negativos:", neg)
  print("Ceros:", cero)
+
+if Ej == 10:
+#Deseña un programa que calcule o área dun rectángulo cuxa base e altura pides por teclado. Asegúrate que estes valores sexan positivos, para eso valida os datos.
+
+ altura = int(input("Introduce el altura: "))
+
+ base = int(input("Introduce la base: "))
+
+ if altura and base <0:
+     print("Un valor o ambos son invalidos, pon numeros positivos")
+ else:
+  area = base * altura
+  print("El area es: ", area)
