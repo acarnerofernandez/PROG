@@ -19,6 +19,15 @@ class DATA:
             raise ValueError("El año debe ser mayor que 0")
         self.ano = ano
 
+    def getd(self):
+        return self.dia
+
+    def getm(self):
+        return self.mes
+
+    def geta(self):
+        return self.ano
+
     def validezdiames (self,dia,mes,ano):
 
         if mes == 2:

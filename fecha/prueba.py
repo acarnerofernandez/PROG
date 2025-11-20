@@ -6,9 +6,12 @@ ano = int(input("Introduce el año: "))
 
 fecha = DATA(dia, mes, ano)
 
-resultado = fecha.validezdiames(dia, mes, ano)
+resultado = fecha.validezdiames(fecha.getd(), fecha.getm(), fecha.geta())
 
 if resultado == True:
     print("La fecha es válida")
+    print("Día:", fecha.getd())
+    print("Mes:", fecha.getm())
+    print("Año:", fecha.geta())
 else:
     print("Fecha inválida:", resultado)
