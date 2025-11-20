@@ -5,12 +5,12 @@ class DATA:
         self.seta(ano)
 
     def setd(self, dia):
-        if dia <= 0 or dia > 31:
+        if dia <= 1 or dia > 31:
             raise ValueError("El día debe estar entre 1 y 31")
         self.dia = dia
 
     def setm(self, mes):
-        if mes <= 0 or mes > 12:
+        if mes <= 1 or mes > 12:
             raise ValueError("El mes debe estar entre 1 y 12")
         self.mes = mes
 
