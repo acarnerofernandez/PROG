@@ -1,4 +1,9 @@
+#Clase DATA que representa una fecha con día, mes y año.
+
 class DATA:
+
+
+
     def __init__(self,dia,mes,ano):
         self.setd(dia)
         self.setm(mes)
